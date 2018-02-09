@@ -15,6 +15,8 @@ $scope.showS=function(student){
    
     $scope.selectedstudents=student;
 }
-
-
+$scope.showNathbtn=function(){
+   
+    AppService.getData();
+}
 }]);
