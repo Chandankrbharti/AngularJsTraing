@@ -10,3 +10,9 @@ myapp.component('studentDetails',{
         this.myname='custom component';
     }]
 });
+myapp.component('homepage',{
+    template:'<div>This is the home page</div>'
+})
+myapp.component('aboutpage',{
+    template:'<div>This is the about page</div>'
+})

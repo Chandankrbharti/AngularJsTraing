@@ -3,12 +3,13 @@ myapp.config(['$stateProvider','$urlRouterProvider',function($stateProvider,$url
     $stateProvider.state({
         name:'home',
         url:'/home',
-        template:'<div>This is the home page</div>'
+        component :'homepage'
+        
     });
     $stateProvider.state({
         name:'about',
         url:'/about',
-        template:'<div>This is the about page</div>'
+        component :'aboutpage'
     });
     $urlRouterProvider.otherwise('/home');
 }]);
