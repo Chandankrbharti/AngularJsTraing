@@ -1,9 +1,9 @@
 [{
-    name:"chanan",
-    age:25
+    "name":"chandan1",
+    "age":25
 },
 {
-    name :"chandani",
-    age :22
+    "name" :"chandani1",
+    "age" :22
 }
 ]

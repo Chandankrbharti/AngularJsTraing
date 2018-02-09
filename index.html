@@ -17,6 +17,7 @@
                     <tr>
                         <th>name</th>
                         <th>age</th>
+                        <th>seniority</th>
                         <th>button</th>
                     </tr>
                 </thead>
@@ -24,6 +25,7 @@
                     <tr ng-repeat="stu in students">
                         <td>{{stu.name}}</td>
                         <td>{{stu.age}}</td>
+                        <td>{{stu.seniority}}</td>
                         <td><button ng-click="showS(stu)" style="border:1 px">view button Details</button></td>
                     </tr>
                 </tbody>
