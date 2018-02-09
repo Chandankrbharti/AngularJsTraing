@@ -5,8 +5,10 @@
     </head>
     <h1>Training</h1>
     <body>
-        <student-details></student-details>
+        <student-details my-title="hello"></student-details>
+        <student-details my-title="hi"></student-details>
         <div ng-controller="MyCtrl">
+                <student-details my-list="students" my-title="{{name}}"></student-details>
                 <table border="1" >
                 <thead>
                     <tr>
