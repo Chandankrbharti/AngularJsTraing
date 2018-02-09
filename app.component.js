@@ -4,7 +4,7 @@ myapp.component('studentDetails',{
     //controllerAs:'vm',
     bindings:{
         myTitle : '@', //string
-        myList : '<' //properties
+        selectedStudents : '<' //properties
     },
     controller: [function(){
         this.myname='custom component';

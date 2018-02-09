@@ -5,10 +5,7 @@
     </head>
     <h1>Training</h1>
     <body>
-        <student-details my-title="hello"></student-details>
-        <student-details my-title="hi"></student-details>
-        <div ng-controller="MyCtrl">
-                <student-details my-list="students" my-title="{{name}}"></student-details>
+          <div ng-controller="MyCtrl">
                 <table border="1" >
                 <thead>
                     <tr>
@@ -28,11 +25,9 @@
                 </tbody>
 
                 </table>
-                <div ng-show="selectedstudents"> 
-                   <p>Student Details</p> 
-                   <p>name: {{selectedstudents.name}}</p> 
-                   <p>Age: {{selectedstudents.age}}</p> 
-                </div>
+                <student-details selected-students="selectedstudents" my-title="Student Details"></student-details>
+               
+                
        </div>
         
     
