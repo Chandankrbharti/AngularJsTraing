@@ -6,12 +6,6 @@
     <h1>Training</h1>
     <body>
         <div ng-controller="MyCtrl">
-            {{myval}}
-            <input type="text" ng-model="myval">
-            <button ng-click="onClick()" style="border:1 px">Click</button>
-            <div ng-if="myval.length===0">
-                    myval is empty
-            </div>
                 <table border="1" >
                 <thead>
                     <tr>
@@ -23,7 +17,7 @@
                 </thead>
                 <tbody>
                     <tr ng-repeat="stu in students">
-                        <td>{{stu.name}}</td>
+                        <td>{{stu.name|CustName:'hello'}}</td>
                         <td>{{stu.age}}</td>
                         <td>{{stu.seniority}}</td>
                         <td><button ng-click="showS(stu)" style="border:1 px">view button Details</button></td>
@@ -36,13 +30,12 @@
                    <p>name: {{selectedstudents.name}}</p> 
                    <p>Age: {{selectedstudents.age}}</p> 
                 </div>
-                <button ng-click="showbtn()" style="border:1 px">showbtn</button>
-                <button ng-click="showNathbtn()" style="border:1 px">showNathbtn</button>
-        </div>
+       </div>
         
     
     <script src="angular.js"></script>
     <script src="app.js"></script>
     <script src="app.service.js"></script>
+    <script src="app.filter.js"></script>
 </body>
 </html>
