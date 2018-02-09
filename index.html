@@ -1,9 +1,44 @@
-<html>
-    <head>Js trainging</head>
+<html lang="eng" ng-app="myapp">
+    <head>
+        <title>trainging</title> 
+        <meta charset="UTF-8">
+    </head>
     <h1>Training</h1>
     <body>
+        <div ng-controller="MyCtrl">
+            {{myval}}
+            <input type="text" ng-model="myval">
+            <button ng-click="onClick()" style="border:1 px">Click</button>
+            <div ng-if="myval.length===0">
+                    myval is empty
+            </div>
+                <table border="1" >
+                <thead>
+                    <tr>
+                        <th>name</th>
+                        <th>age</th>
+                        <th>button</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr ng-repeat="stu in students">
+                        <td>{{stu.name}}</td>
+                        <td>{{stu.age}}</td>
+                        <td><button ng-click="showS(stu)" style="border:1 px">view button Details</button></td>
+                    </tr>
+                </tbody>
 
-    </body>
+                </table>
+                <div ng-show="selectedstudents"> 
+                   <p>Student Details</p> 
+                   <p>name: {{selectedstudents.name}}</p> 
+                   <p>Age: {{selectedstudents.age}}</p> 
+                </div>
+        </div>
+        
+    
     <script src="angular.js"></script>
     <script src="app.js"></script>
+    <script src="app.service.js"></script>
+</body>
 </html>
