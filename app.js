@@ -8,7 +8,7 @@ myapp.config(['$stateProvider','$urlRouterProvider',function($stateProvider,$url
     $stateProvider.state({
         name:'about',
         url:'/about',
-        template:'<div>This is the home page</div>'
+        template:'<div>This is the about page</div>'
     });
     $urlRouterProvider.otherwise('/home');
 }]);
